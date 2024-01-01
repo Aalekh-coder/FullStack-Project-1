@@ -1,0 +1,50 @@
+<% layout("/layouts/boilerplate") %>
+<h1 class="col-6 offset-4 mb-5">SignUp for wanderlust</h1>
+<div class="row mt-3">
+    <div class="col-6 offset-3">
+        <form action="/signup" method="POST" class="needs-validation" novalidate>
+            <div class="mb-3">
+                <label for="username" class="form-label">Enter username</label>
+                <input
+                  id="username"
+                  class="form-control"
+                  type="text"
+                  placeholder=" Enter place username"
+                  name="username"
+                  required
+                />
+                <div class="invalid-feedback">Enter username</div>
+                <div class="valid-feedback">username looks good!</div>
+              </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Enter email</label>
+                <input
+                  id="email"
+                  class="form-control"
+                  type="email"
+                  placeholder=" Enter place email"
+                  name="email"
+                  required
+                />
+                <div class="invalid-feedback">Enter email</div>
+                <div class="valid-feedback">email looks good!</div>
+              </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Enter password</label>
+                <input
+                  id="password"
+                  class="form-control"
+                  type="password"
+                  placeholder=" Enter place password"
+                  name="password"
+                  required
+                />
+                <div class="invalid-feedback">Enter password</div>
+                <div class="valid-feedback">password looks good!</div>
+              </div>
+              <button class="btn btn-primary">SignUp</button>
+        </form>
+    </div>
+</div>
